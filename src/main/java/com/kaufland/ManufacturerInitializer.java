@@ -33,7 +33,7 @@ public class ManufacturerInitializer {
     static String YOUR_NAME = "Jorge";
     static ProductDTO YOUR_PRODUCT = new ProductDTO(70, 20, 10);
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 30000)
     @PostConstruct
     public void init() {
         LOGGER.info("Calling to: " + registerUrl);
